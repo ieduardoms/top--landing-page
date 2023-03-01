@@ -1,69 +1,222 @@
-div
-{
-    border-width: 2px;
-    border-style: solid;
-    margin: 4px;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.body {
+    /* height: 100vh; */
 }
 
-.main
-{
+.main {
+    height: 100vh;
     border-color: black;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    font-family: Roboto, sans-serif;
 }
 
-.header
-{
+.header {
     border-color: brown;
-    /* background-color: #1F2937; */
-    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.header-container
-{
-    border-color: orange;
+.header,
+.footer {
+    background-color: #1F2937;
+}
+
+.container {
     width: 80vw;
 }
 
-.header-top
-{
-    border-color: yellow;
+.header-container {
+    border-color: red;
+    color: #F9FAF8;
+}
+
+.header-top {
+    border-color: orange;
     display: flex;
     justify-content: space-between;
 }
 
-.title{
+.title {
     /* color: #F9FAF8; */
     font-size: 24px;
 }
 
-.links{
+.links {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
 }
 
-.header-center
-{
-    border-color: yellow;
+.header-center {
+    border-color: orange;
     display: flex;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.header-center-title
-{
-    /* color: #F9FAF8; */
+.header-center-title {
     font-size: 48px;
     font-weight: bolder;
 }
 
-.header-center button {
+.header-center-text {
+    font-size: 18px;
+}
+
+.header-center-left {
+    flex: 1;
+}
+
+.header-center-right {
+    flex: 0;
+    text-align: center;
+}
+
+.section1 {
+    text-align: center;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: brown;
+}
+
+.section1-container {
+    border-color: red;
+    /* width: 80vw; */
+}
+
+.section1-title
+{
+    font-size: 24px;
+}
+
+.picture-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 10px;
+    border-color: orange;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.picture-container .picture-item {
+    width: 140px;
+    border-width: 0px;
+}
+
+.picture-item img {
+    object-fit: contain;
+    width: 140px;
+    border-radius: 10px;
+}
+
+.section2 {
+    /* flex: 2; */
+    /* background-color: #E5E7EB; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section2-container {
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 20px 0px;
+    background-color: #E5E7EB;
+    padding: 8px;
+}
+
+.quote {
+    font-size: 16px;
+    font-weight: lighter;
+    color: #1F2937;
+    font-style: italic;
+}
+
+.author {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    text-align: right;
+}
+
+.section3 {
+    /* flex: 1; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section3-container {
+    box-sizing: border-box;
+    display: flex;
+    background-color: #3882F6;
+    border-radius: 10px;
+    margin: 20px 0px;
+    padding: 8px;
+}
+
+.section3-left {
+    flex: 1;
+    /* padding: 10px; */
+}
+
+.section3-title {
+    font-size: 16px;
+    font-weight: bolder;
+    color: aliceblue;
+}
+
+.section3-message {
+    font-size: 14px;
+    color: gainsboro;
+}
+
+.section3-right {
+    display: flex;
+    align-items: center;
+
+}
+
+.section3-button {
+    border: 1px solid gainsboro;
+    background: inherit;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    color: gainsboro;
+}
+
+/* ================ */
+/* HTML Tags styles */
+/* ================ */
+
+a:link {
+    color: #F9FAF8;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #F9FAF8;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
     padding: 8px 16px;
     border-radius: 8px;
     background: royalblue;
@@ -72,49 +225,14 @@ div
     font-weight: bolder;
 }
 
-.header-center-text
-{
-    font-size: 18px;
+div {
+    border-width: 0px;
+    border-style: solid;
+    margin: 2px;
 }
 
-.header-center-left
-{
-    flex: 1;
-}
 
-.header-center-right
-{
-    flex: 0;
-    text-align: center;
-}
-
-.section1
-{
-    text-align: center;
-    flex: 2;
-    /* display: flex;
-    flex-direction: row;
-    justify-content: center; */
-}
-
-.section1 .pictures
-{
-    display: flex;
-    justify-content: space-between;
-    gap: 100px;
-}
-
-.section1 img
-{
-    object-fit: contain;
-}
-
-.section2
-{
-    flex: 2;
-}
-
-.section3
-{
-    flex: 1;
+p {
+    padding: 0px;
+    margin: 0px;
 }
